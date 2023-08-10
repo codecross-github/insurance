@@ -79640,7 +79640,7 @@ $idf:1}
 A.pc.prototype={}
 A.IW.prototype={
 H(a){var s=$.ax7(),r=$.avk()
-return new A.wq("/","Sun City Insurance",s,!1,new A.Ic(),r,r[0],null)}}
+return new A.wq("/home","Sun City Insurance",s,!1,new A.Ic(),r,r[1],null)}}
 A.Wj.prototype={
 dq(){var s=this
 return A.au(["applicantName",s.a,"dob",s.b,"sSN",s.c,"licenseNo",s.d,"state",s.e,"address",s.f,"city",s.r,"zipCode",s.w,"phone",s.x,"email",s.y,"profession",s.z,"lengthOfOwnership",s.Q,"levelOfEducation",s.as],t.N,t.z)},
@@ -79838,7 +79838,7 @@ A.t4.prototype={
 H(a){var s=null,r=A.bs(a,B.d_,t.w).w.a.a,q=r>500?500:r
 return A.arn(B.l5,new A.eM(B.M,s,s,A.e3(s,A.fh(A.b([B.fT,B.fT,B.fT,A.aqa("assets/images/tickcircle.png",s),A.cY("Thanks for\nsubmitting form!",s,s,s,B.cU.c6(B.bd),B.jk,s),B.fT,new A.vC("Submit Again",new A.a9r(),s)],t.p),B.ar,B.r9,B.as),B.o,s,s,s,s,s,s,s,B.li,s,s,q),s))}}
 A.a9r.prototype={
-$0(){return A.apZ($.bF(),"/",t.z)},
+$0(){return A.apZ($.bF(),"/home",t.z)},
 $S:0}
 A.aaU.prototype={}
 A.oc.prototype={
@@ -86094,7 +86094,7 @@ s($,"aKI","avP",()=>A.eZ("''",!0,!1))
 r($,"aMU","ax7",()=>{var q=null
 return A.aay(B.ad,B.j,B.A0,B.As,"Inter",B.Ap,B.bd,B.j,B.Ai,A.aD7(A.a9P(q,q,q,q,q,q,q,q,q,B.A9,q,q,q,q,q,q,q,q,q)),q)})
 s($,"aJW","avk",()=>{var q=null,p=t.z
-return A.b([A.alP(q,q,q,B.mc,B.md,B.a6,q,!1,q,!0,q,"/",!0,new A.a7a(),q,q,q,!0,!0,q,q,q,q,p),A.alP(q,q,q,B.mc,B.md,B.a6,q,!1,q,!0,q,"/submit",!0,new A.a7b(),q,q,q,!0,!0,q,q,q,q,p)],t.RT)})})();(function nativeSupport(){!function(){var s=function(a){var m={}
+return A.b([A.alP(q,q,q,B.mc,B.md,B.a6,q,!1,q,!0,q,"/home",!0,new A.a7a(),q,q,q,!0,!0,q,q,q,q,p),A.alP(q,q,q,B.mc,B.md,B.a6,q,!1,q,!0,q,"/submit",!0,new A.a7b(),q,q,q,!0,!0,q,q,q,q,p)],t.RT)})})();(function nativeSupport(){!function(){var s=function(a){var m={}
 m[a]=1
 return Object.keys(hunkHelpers.convertToFastObject(m))[0]}
 v.getIsolateTag=function(a){return s("___dart_"+a+v.isolateTag)}

@@ -23,7 +23,7 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="sun_city_insurance">
+  <meta name="apple-mobile-web-app-title" content="tester1">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
@@ -34,228 +34,12 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = "615752428";
+    var serviceWorkerVersion = "1023728102";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
-
-<!--<style>-->
-<!--  .container {-->
-<!--    width: 100vw;-->
-<!--    height: 100vh;-->
-<!--    display: flex;-->
-<!--    /* Default Axis is X*/-->
-<!--    justify-content: center;-->
-<!--    /* Main Axis */-->
-<!--    align-items: center;-->
-<!--    /* Cross Axis */-->
-<!--  }-->
-<!--  .indicator {-->
-<!--    width: 50vw;-->
-<!--  }-->
-<!--</style>-->
-<!--<div id="loading_indicator" class="container">-->
-<!--  <img class="indicator" src="loading.gif" />-->
-<!--</div>-->
-
-<!--<body>-->
-<!--  <script>-->
-<!--    window.addEventListener('load', function(ev) {-->
-<!--      // Download main.dart.js-->
-<!--      _flutter.loader.loadEntrypoint({-->
-<!--        serviceWorker: {-->
-<!--          serviceWorkerVersion: serviceWorkerVersion,-->
-<!--        },-->
-<!--        onEntrypointLoaded: function(engineInitializer) {-->
-<!--          engineInitializer.initializeEngine().then(function(appRunner) {-->
-<!--            appRunner.runApp();-->
-<!--          });-->
-<!--        }-->
-<!--      });-->
-<!--    });-->
-<!--  </script>-->
-
-<!--  &lt;!&ndash; Loading indicator &ndash;&gt;-->
-<!--&lt;!&ndash;  <div id="loading">&ndash;&gt;-->
-<!--&lt;!&ndash;    <style>&ndash;&gt;-->
-<!--&lt;!&ndash;      body {&ndash;&gt;-->
-<!--&lt;!&ndash;        inset: 0;&ndash;&gt;-->
-<!--&lt;!&ndash;        overflow: hidden;&ndash;&gt;-->
-<!--&lt;!&ndash;        margin: 0;&ndash;&gt;-->
-<!--&lt;!&ndash;        padding: 0;&ndash;&gt;-->
-<!--&lt;!&ndash;        position: fixed;&ndash;&gt;-->
-<!--&lt;!&ndash;      }&ndash;&gt;-->
-
-<!--&lt;!&ndash;      #loading {&ndash;&gt;-->
-<!--&lt;!&ndash;        align-items: center;&ndash;&gt;-->
-<!--&lt;!&ndash;        display: flex;&ndash;&gt;-->
-<!--&lt;!&ndash;        height: 100%;&ndash;&gt;-->
-<!--&lt;!&ndash;        justify-content: center;&ndash;&gt;-->
-<!--&lt;!&ndash;        width: 100%;&ndash;&gt;-->
-<!--&lt;!&ndash;      }&ndash;&gt;-->
-
-<!--&lt;!&ndash;      #loading img {&ndash;&gt;-->
-<!--&lt;!&ndash;        animation: 1s ease-in-out 0s infinite alternate breathe;&ndash;&gt;-->
-<!--&lt;!&ndash;        opacity: .66;&ndash;&gt;-->
-<!--&lt;!&ndash;        transition: opacity .4s;&ndash;&gt;-->
-<!--&lt;!&ndash;      }&ndash;&gt;-->
-
-<!--&lt;!&ndash;      #loading.main_done img {&ndash;&gt;-->
-<!--&lt;!&ndash;        opacity: 1;&ndash;&gt;-->
-<!--&lt;!&ndash;      }&ndash;&gt;-->
-
-<!--&lt;!&ndash;      #loading.init_done img {&ndash;&gt;-->
-<!--&lt;!&ndash;        animation: .33s ease-in-out 0s 1 forwards zooooom;&ndash;&gt;-->
-<!--&lt;!&ndash;        opacity: .05;&ndash;&gt;-->
-<!--&lt;!&ndash;      }&ndash;&gt;-->
-
-<!--&lt;!&ndash;      @keyframes breathe {&ndash;&gt;-->
-<!--&lt;!&ndash;        from {&ndash;&gt;-->
-<!--&lt;!&ndash;          transform: scale(1)&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
-
-<!--&lt;!&ndash;        to {&ndash;&gt;-->
-<!--&lt;!&ndash;          transform: scale(0.95)&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
-<!--&lt;!&ndash;      }&ndash;&gt;-->
-
-<!--&lt;!&ndash;      @keyframes zooooom {&ndash;&gt;-->
-<!--&lt;!&ndash;        from {&ndash;&gt;-->
-<!--&lt;!&ndash;          transform: scale(1)&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
-
-<!--&lt;!&ndash;        to {&ndash;&gt;-->
-<!--&lt;!&ndash;          transform: scale(10)&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
-<!--&lt;!&ndash;      }&ndash;&gt;-->
-<!--&lt;!&ndash;    </style>&ndash;&gt;-->
-<!--&lt;!&ndash;    <img src="loading.png" alt="Loading indicator..." />&ndash;&gt;-->
-<!--&lt;!&ndash;  </div>&ndash;&gt;-->
-<!--&lt;!&ndash;  <script>&ndash;&gt;-->
-<!--&lt;!&ndash;    window.addEventListener('load', function () {&ndash;&gt;-->
-<!--&lt;!&ndash;      var loading = document.querySelector('#loading');&ndash;&gt;-->
-<!--&lt;!&ndash;      _flutter.loader.loadEntrypoint({&ndash;&gt;-->
-<!--&lt;!&ndash;        serviceWorker: {&ndash;&gt;-->
-<!--&lt;!&ndash;          serviceWorkerVersion: serviceWorkerVersion,&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
-<!--&lt;!&ndash;      }).then(function (engineInitializer) {&ndash;&gt;-->
-<!--&lt;!&ndash;        loading.classList.add('main_done');&ndash;&gt;-->
-<!--&lt;!&ndash;        return engineInitializer.initializeEngine();&ndash;&gt;-->
-<!--&lt;!&ndash;      }).then(function (appRunner) {&ndash;&gt;-->
-<!--&lt;!&ndash;        loading.classList.add('init_done');&ndash;&gt;-->
-<!--&lt;!&ndash;        return appRunner.runApp();&ndash;&gt;-->
-<!--&lt;!&ndash;      }).then(function (app) {&ndash;&gt;-->
-<!--&lt;!&ndash;        // Wait a few milliseconds so users can see the "zoooom" animation&ndash;&gt;-->
-<!--&lt;!&ndash;        // before getting rid of the "loading" div.&ndash;&gt;-->
-<!--&lt;!&ndash;        window.setTimeout(function () {&ndash;&gt;-->
-<!--&lt;!&ndash;          loading.remove();&ndash;&gt;-->
-<!--&lt;!&ndash;        }, 200);&ndash;&gt;-->
-<!--&lt;!&ndash;      });&ndash;&gt;-->
-<!--&lt;!&ndash;    });&ndash;&gt;-->
-<!--&lt;!&ndash;  </script>&ndash;&gt;-->
-<!--</body>-->
-<!--<script>-->
-<!--  window.onload = function () {-->
-<!--    setTimeout(function () {-->
-<!--      var loadingIndicator = document.getElementById("loading_indicator");-->
-<!--      if (loadingIndicator) {-->
-<!--        loadingIndicator.remove();-->
-<!--      }-->
-<!--    }, 1000);-->
-<!--  };-->
-<!--</script>-->
-<style>
-  .container {
-
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    /* Default Axis is X*/
-    justify-content: center;
-    /* Main Axis */
-    align-items: center;
-    /* Cross Axis */
-  }
-
-  .indicator {
-    width: 50vw;
-  }
-</style>
-<div id="loading_indicator" class="container">
-  <img class="indicator" src="loading.gif" />
-</div>
 <body>
-<script>
-      var serviceWorkerVersion = null;
-      var scriptLoaded = false;
-      function loadMainDartJs() {
-        if (scriptLoaded) {
-          return;
-        }
-        scriptLoaded = true;
-        var scriptTag = document.createElement('script');
-        scriptTag.src = 'main.dart.js';
-        scriptTag.type = 'application/javascript';
-        document.body.append(scriptTag);
-      }
-
-      if ('serviceWorker' in navigator) {
-        // Service workers are supported. Use them.
-        window.addEventListener('load', function () {
-          // Register Firebase Messaging service worker.
-          navigator.serviceWorker.register('firebase-messaging-sw.js');
-
-          // Wait for registration to finish before dropping the <script> tag.
-          // Otherwise, the browser will load the script multiple times,
-          // potentially different versions.
-          var serviceWorkerUrl =
-            'flutter_service_worker.js?v=' + serviceWorkerVersion;
-
-          navigator.serviceWorker.register(serviceWorkerUrl).then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing ?? reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
-
-          // If service worker doesn't succeed in a reasonable amount of time,
-          // fallback to plaint <script> tag.
-          setTimeout(() => {
-            if (!scriptLoaded) {
-              console.warn(
-                'Failed to load app from service worker. Falling back to plain <script> tag.'
-              );
-              loadMainDartJs();
-            }
-          }, 4000);
-        });
-      } else {
-        // Service workers not supported. Just drop the <script> tag.
-        loadMainDartJs();
-      }
-    </script>
-
-<script src="main.dart.js" type="application/javascript"></script>
 <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -272,14 +56,4 @@
     });
   </script>
 </body>
-<script>
-  window.onload = function () {
-    setTimeout(function () {
-      var loadingIndicator = document.getElementById("loading_indicator");
-      if (loadingIndicator) {
-        loadingIndicator.remove();
-      }
-    }, 1000);
-  };
-</script>
 </html>
